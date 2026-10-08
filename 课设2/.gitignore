@@ -1,0 +1,6 @@
+# Local/generated files
+__pycache__/
+.claude/
+test_dataset/
+*.tmp
+~$*
