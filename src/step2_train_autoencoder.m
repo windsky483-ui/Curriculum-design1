@@ -1,4 +1,4 @@
-%% Step 2: Train image compression autoencoder
+%% 训练图像压缩自编码器
 clear; clc; close all;
 
 rng(2026);

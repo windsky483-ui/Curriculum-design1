@@ -1,7 +1,5 @@
 function y = add_awgn_by_snr(x, snrDb)
-%ADD_AWGN_BY_SNR Add AWGN according to the measured signal power.
-%   Y = ADD_AWGN_BY_SNR(X, SNRDB) adds zero-mean Gaussian noise so that the
-%   output has approximately SNRDB dB signal-to-noise ratio.
+% 按信噪比添加高斯白噪声
 
 x = double(x);
 signalPower = mean(x(:).^2);

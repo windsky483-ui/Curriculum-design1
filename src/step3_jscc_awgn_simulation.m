@@ -1,4 +1,4 @@
-%% Step 3: JSCC autoencoder over AWGN channel
+%% 自编码器通过AWGN信道传输
 clear; clc; close all;
 
 scriptDir = fileparts(mfilename("fullpath"));

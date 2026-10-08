@@ -1,4 +1,4 @@
-%% Step 1: DnCNN image denoising demo
+%% DnCNN图像去噪
 clear; clc; close all;
 
 addpath(fullfile(fileparts(mfilename("fullpath")), "utils"));

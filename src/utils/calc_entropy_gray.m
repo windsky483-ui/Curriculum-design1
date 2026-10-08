@@ -1,7 +1,5 @@
 function H = calc_entropy_gray(img)
-%CALC_ENTROPY_GRAY Calculate 8-bit grayscale entropy.
-%   H = CALC_ENTROPY_GRAY(IMG) converts IMG to grayscale when needed and
-%   returns Shannon entropy in bits.
+% 计算图像灰度信息熵
 
 img = im2double(img);
 
