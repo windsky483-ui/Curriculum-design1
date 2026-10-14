@@ -1,9 +1,8 @@
 function y = add_awgn_by_snr(x, snrDb)
-% 按信噪比添加高斯白噪声
-
+% 实值符号平均总功率(含直流分量)，不是去均值方差。
+validateattributes(x,{'numeric'},{'real','finite','nonempty'});
+validateattributes(snrDb,{'numeric'},{'real','finite','scalar'});
 x = double(x);
-signalPower = mean(x(:).^2);
-noisePower = signalPower / (10^(snrDb / 10));
-noise = sqrt(noisePower) * randn(size(x));
-y = x + noise;
+noisePower = mean(x(:).^2)/10^(snrDb/10);
+y = x+sqrt(noisePower)*randn(size(x));
 end
